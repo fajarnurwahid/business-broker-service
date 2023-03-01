@@ -1,0 +1,50 @@
+/* start: Service */
+.service-wrapper {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 32px;
+}
+.service-wrapper>* {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+	border: 1px solid var(--grey);
+	border-radius: 8px;
+	padding: 48px 24px;
+}
+.service-wrapper svg {
+	width: 120px;
+	height: 120px;
+	margin: 0 auto;
+	display: block;
+	margin-bottom: 32px;
+}
+.service-banner {
+	padding: 32px 24px;
+	background-image: url(img/banner-bg.png);
+	border-radius: 8px;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+/* start: Service */
+
+
+
+
+
+
+
+/* start: Breakpoints */
+@media screen and (max-width: 991px) {
+	.service-wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+
+
+@media screen and (max-width: 767px) {
+	.service-wrapper {
+		grid-template-columns: 1fr;
+	}
+}
+/* end: Breakpoints */
